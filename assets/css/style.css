@@ -1,9 +1,20 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+
 nav {
-  background: linear-gradient(-55deg, #13a8ad, #11c757, #13a8ad);
+  background: darkolivegreen;
   background-size: 500%, 400%;
   position: relative;
   animation: change 35s ease-in-out infinite;
-  height: 10vh;
+  height: 8vh;
   width: 100%;  
   margin: 0;
 }
@@ -25,9 +36,8 @@ nav {
   margin-top: 0;
   margin-right: 1;
   position: fixed;
-  background: linear-gradient(-55deg,#13a8ad, #11c757, #13a8ad);
+  background: darkolivegreen;
   background-size: 500%, 400%;
-  animation: change 20s ease-in-out infinite;
   height: 30%;
   width: 100%;
   flex-direction: column;
@@ -49,7 +59,7 @@ nav {
 .nav-links li a {
   color: white;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 20px;
   border: solid 0.1px white;
   padding: 12px 2px 5px 2px;
   text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
@@ -128,6 +138,11 @@ li.fades{
   cursor: pointer;
 } 
 
+.menu-buttons {
+  color: white;
+  font-size: 20px;
+}
+
 /*-------------------------------Hamburger Animation*/
 
 .changelines .line-1 {
@@ -150,23 +165,131 @@ li.fades{
   transition: all 0.8s;
 }
 
-.index-songsection {
-  text-align: center;
-  justify-content: center;
-}
-
 .center-row {
   justify-content: center;
 }
 
-.index-songs-header {
-  color: rgb(216, 27, 96);
+.index-header {
+  text-align: center;
+  color: black;
+  font-size: 45px;
+  font-weight: 300;
   margin: 70px 0 40px 0;
-  font-weight:400;
 }
 
 .packages img {
   height: auto;
   width: 300px;
-  margin: 10px 10px  ;
+  margin: 10px 20px;
+}
+
+.packages p {
+  margin: 10px;
+  color: black;
+}
+
+.add-button {
+  border: solid 2px black;
+  width: 40%;
+  height: auto;
+  font-size: 25px;
+  text-align: center;
+  float: left;
+}
+
+.add-button:hover{
+    color: #11c757;
+    border-color: #11c757;
+}
+
+.price-button {
+  border: solid 2px black;
+  width: 40%;
+  height: auto;
+  font-size: 25px;
+  text-align: center;
+  float: right;
+  color: #13a8ad;
+}
+
+.product-details {
+  vertical-align: center;
+  justify-content: center;
+}
+
+.banner-index {
+  height: 40vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-video {
+  justify-content: center;
+  z-index: -1;
+  position: relative;
+  height: 120vh;
+  box-shadow: 4px 6px 5px #13a8ad;
+}
+
+.banner-shadow {
+height: 100%;
+width: 100%;
+background-color: rgba(46, 43, 43, 0.38);
+z-index: 2;
+}
+
+.banner-text {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  z-index: 4;
+  margin-top: -200px;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+
+.product-header {
+  margin: 0px 5px;
+  color: gray;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.product-boxes {
+  margin-top: 50px;
+}
+
+.product-name {
+  float: left;
+}
+
+.product-weight {
+  float: right;
+  color: #11c757;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.product-boxes a:hover {
+  box-shadow: 3px 4px 6px 2px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+.footer {
+  background-color: rgba(105, 103, 103, 0.6);
+  height: 250px;
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+  text-align: center;
+}
+
+.copyright{
+  color: white;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
 }
