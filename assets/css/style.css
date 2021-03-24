@@ -165,6 +165,19 @@ li.fades{
   transition: all 0.8s;
 }
 
+.center {
+  text-align: center;
+} 
+
+.icon-box {
+  min-height:100px;
+  margin-top:60px;
+} 
+
+.icon-text {
+ padding:0 24%;
+}
+
 .center-row {
   justify-content: center;
 }
@@ -175,11 +188,11 @@ li.fades{
   font-size: 45px;
   font-weight: 300;
   margin: 70px 0 40px 0;
-}
+} 
 
 .packages img {
   height: auto;
-  width: 300px;
+  width: 210px;
   margin: 10px 20px;
 }
 
