@@ -4,13 +4,18 @@ body {
     font-weight: 100;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 a:hover {
   text-decoration: none;
 }
 
+/*-------------------------------Navigation */
+
 nav {
-  background: darkolivegreen;
+  background-color: rgba(85, 107, 47, 0.705);
   background-size: 500%, 400%;
   position: relative;
   animation: change 35s ease-in-out infinite;
@@ -165,6 +170,8 @@ li.fades{
   transition: all 0.8s;
 }
 
+/*-------------------------------3 steps info  */
+
 .center {
   text-align: center;
 } 
@@ -182,53 +189,7 @@ li.fades{
   justify-content: center;
 }
 
-.index-header {
-  text-align: center;
-  color: black;
-  font-size: 45px;
-  font-weight: 300;
-  margin: 70px 0 40px 0;
-} 
-
-.packages img {
-  height: auto;
-  width: 210px;
-  margin: 10px 20px;
-}
-
-.packages p {
-  margin: 10px;
-  color: black;
-}
-
-.add-button {
-  border: solid 2px black;
-  width: 40%;
-  height: auto;
-  font-size: 25px;
-  text-align: center;
-  float: left;
-}
-
-.add-button:hover{
-    color: #11c757;
-    border-color: #11c757;
-}
-
-.price-button {
-  border: solid 2px black;
-  width: 40%;
-  height: auto;
-  font-size: 25px;
-  text-align: center;
-  float: right;
-  color: #13a8ad;
-}
-
-.product-details {
-  vertical-align: center;
-  justify-content: center;
-}
+/*-------------------------------Banner Section */
 
 .banner-index {
   height: 40vh;
@@ -262,12 +223,152 @@ z-index: 2;
   font-weight: 100;
 }
 
+.index-header {
+  text-align: center;
+  color: black;
+  font-size: 45px;
+  font-weight: 300;
+  margin: 70px 0 40px 0;
+} 
+
+.info-section {
+  margin-bottom: 50px;
+}
+
+.step-icons {
+  font-size: 45px;
+  color: rgba(85, 107, 47, 0.705);
+}
+
+.step-info {
+  font-size: 2vh;
+  font-weight: 100;
+  text-align: center;
+}
+
+
+/*-------------------------------Product Section */
+
+/* Style the tab buttons */
+.tablink {
+  background-color: rgba(85, 107, 47, 0.705);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  font-size: 16px;
+  height: 50px;
+  width: 25%;
+  float: left;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 0px;
+
+}
+
+.product-image-box {
+  width: 60%;
+  height: auto;
+}
+
+.image-box {
+  width: 60%;
+  height: auto;
+  float: left;
+}
+.packages img {
+  height: auto;
+  width: 100%;
+  max-height: 450px;
+  margin: 10px 0px;
+  border: solid 10px rgba(85, 107, 47, 0.705);
+}
+
+.packages {
+  width: 100%;
+  margin: 0px;
+  padding: 10px 0px;
+  vertical-align: center;
+  justify-content: center;
+  align-content: space-between;
+  color: black;
+}
+
+.product-detail-section {
+  width: 30%;
+  height: 100%;
+  float: right;
+  top: 0;
+}
+
+.buttons-wrap {
+    float: left;
+}
+
+
+.add-button {
+  border: solid 2px black;
+  width: 150px;
+  height: auto;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.add-button:hover{
+    color: rgba(85, 107, 47, 0.705);
+    border-color: rgba(85, 107, 47, 0.705);
+}
+
+.price-button {
+  border: solid 2px black;
+  width: 150px;
+  height: auto;
+  font-size: 25px;
+  text-align: center;
+  color: #11c757;
+  margin-top: 10px;
+}
+
+.product-settings-button {
+  border: solid 2px black;
+  width: 150px;
+  height: auto;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+}
+
+.product-details {
+  vertical-align: center;
+  justify-content: center;
+  float: left;
+  padding: 10px 0;
+}
+
+.ingridients {
+  font-size: 18px;
+}
 
 .product-header {
   margin: 0px 5px;
   color: gray;
   font-size: 30px;
   font-weight: 100;
+  float: right;
+  width: 37%;
+  padding-top: 10px;
 }
 
 .product-boxes {
@@ -275,26 +376,32 @@ z-index: 2;
 }
 
 .product-name {
-  float: left;
+  font-size: 30px;
+  font-weight: 100;
+  float: right;
 }
 
 .product-weight {
-  float: right;
-  color: #11c757;
+  color: orange;
   font-size: 20px;
   font-weight: 100;
+  padding-top: 10px;
+  padding-left: 10px;
+  float: right;
+}
+.details-header {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
 }
 
-.product-boxes a:hover {
-  box-shadow: 3px 4px 6px 2px rgba(0, 0, 0, 0.1);
-  font-weight: 500;
-}
+/*------------------------------- Footer */
 
 .footer {
   background-color: rgba(105, 103, 103, 0.6);
   height: 250px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 700px;
   position: relative;
   text-align: center;
 }
@@ -305,4 +412,53 @@ z-index: 2;
   text-align: center;
   position: absolute;
   bottom: 0;
+}
+
+@media (max-width: 415px){
+ .step-info {
+  font-size: 1.5vh;
+ }
+.ingridients {
+  font-size: 10px;
+  text-align: center;
+ }
+ .product-weight {
+  font-size: 15px;
+  padding: 0 0 0 10px;
+ }
+ .product-name {
+  font-size: 15px;
+ }
+ .details-header {
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.price-button {
+  width: 100px;
+}
+.product-settings-button {
+  width: 100px;
+}
+.add-button {
+  width: 100px;
+}
+.image-box {
+  width: 100%;
+  height: auto;
+}
+.details-header {
+  font-size: 15px;
+  padding-top: 10px;
+}
+}
+@media (max-width: 768px){
+  .product-header {
+  width: 60%;
+}
+}
+@media (min-width: 990px) {
+.product-details {
+  padding: 10px 20px;
+ }
 }
