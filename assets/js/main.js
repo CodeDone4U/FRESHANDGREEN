@@ -1,4 +1,4 @@
-function openCity(cityName, elmnt, color) {
+function openProduct(productBox, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -13,7 +13,7 @@ function openCity(cityName, elmnt, color) {
   }
 
   // Show the specific tab content
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(productBox).style.display = "block";
 
   // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = color;
@@ -22,3 +22,12 @@ function openCity(cityName, elmnt, color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
+
+function myFunction() {
+  var x = document.getElementById("ingredient");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

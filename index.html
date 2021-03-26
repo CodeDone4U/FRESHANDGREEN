@@ -81,100 +81,200 @@
 
     <!-- Products -->
     <div class="container">
-        <button class="tablink" onclick="openCity('Small', this, 'orange')">Small</button>
-        <button class="tablink" onclick="openCity('Medium', this, 'orange')">Medium</button>
-        <button class="tablink" onclick="openCity('Large', this, 'orange')" id="defaultOpen">Large</button>
-        <button class="tablink" onclick="openCity('Customize', this, 'orange')">Customize</button>
+        <button class="tablink" onclick="openProduct('Small', this, '#f79862')" id="defaultOpen">Small</button>
+        <button class="tablink" onclick="openProduct('Medium', this, '#f79862')">Medium</button>
+        <button class="tablink" onclick="openProduct('Large', this, '#f79862')">Large</button>
+        <button class="tablink" onclick="openProduct('Customize', this, '#f79862')">Customize</button>
 
         <div id="Small" class="tabcontent packages">
-            <a>
-                <div class="image-box">
-                    <img class="product-image" src="./assets/images/7.jpg" alt="Image of fruit box two" />
-                </div>
-                <div class="info-box">
-                    <div id="small-products">
-                        <div class="product-header">
-                            <p class="details-header">These are the ingredients of this box:</p>
-                            <p class="ingridients">
-                                Kiwi,
-                                Avocado,
-                                Banana,
-                                Apple,
-                                Strawberry,
-                                Cucumber,
-                                Lettuce,
-                                White Potato,
-                                Red Potato,
-                                Yellow Onion,
-                                Red Onion,
-                                Spring Onion,
-                                Garlic,
-                                Tomato,
-                                Celery,
-                                Carrot,
-                                Lemon.
-                            </p>
-                            <p class="product-weight">≈ 5kg</p>
-                            <p class="product-name">Small</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-details">
-                    <div class="price-button">€ 7.50</div>
-                    <div type="button" class="product-settings-button" data-toggle="collapse"
-                        data-target="#small-products">
-                        <i class="fas fa-sliders-h"></i>
-                    </div>
-                    <div class="add-button"><i class="fas fa-shopping-basket"></i>
-                    </div>
-                </div>
+            <div class="image-box">
+                <img class="product-image" src="./assets/images/7.jpg" alt="Image of fruit box two" />
+            </div>
+            <div class="info-box">
+                <div class="container">
+                    <div class="change-product collapse" id="small-products">
 
-            </a>
+                        <p class="details-header">
+                            Remove ingredients from your box:
+                        </p>
+
+                        <input type="checkbox" id="ingredient1" name="ingredient1" value="Kiwi">
+                        <label for="ingredient1">
+                            <span class="ingredient">
+                                Kiwi
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient2" name="ingredient2" value="Avocado">
+                        <label for="ingredient2">
+                            <span class="ingredient">
+                                Avocado
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient3" name="ingredient3" value="Banana">
+                        <label for="ingredient3">
+                            <span class="ingredient">
+                                Banana
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient4" name="ingredient4" value="Apple">
+                        <label for="ingredient4">
+                            <span class="ingredient">
+                                Apple
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient5" name="ingredient5" value="Strawberry">
+                        <label for="ingredient5">
+                            <span class="ingredient">
+                                Strawberry
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient6" name="ingredient6" value="Cucumber">
+                        <label for="ingredient6">
+                            <span class="ingredient">
+                                Cucumber
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient7" name="ingredient7" value="Lettuce">
+                        <label for="ingredient7">
+                            <span class="ingredient">
+                                Lettuce
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient8" name="ingredient8" value="White Potato">
+                        <label for="ingredient8">
+                            <span class="ingredient">
+                                White Potato
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient9" name="ingredient9" value="Red Potato">
+                        <label for="ingredient9">
+                            <span class="ingredient">
+                                Red Potato
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient13" name="ingredient13" value="Garlic">
+                        <label for="ingredient13">
+                            <span class="ingredient">
+                                Garlic
+                            </span> </label>
+                        <input type="checkbox" id="ingredient10" name="ingredient10" value="Yellow Onion">
+                        <label for="ingredient10">
+                            <span class="ingredient">
+                                Yellow Onion
+                            </span> </label>
+                        <input type="checkbox" id="ingredient11" name="ingredient11" value="Red Onion">
+                        <label for="ingredient11">
+                            <span class="ingredient">
+                                Red Onion
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient12" name="ingredient12" value="Spring Onion">
+                        <label for="ingredient12">
+                            <span class="ingredient">
+                                Spring Onion
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient14" name="ingredient14" value="Tomato">
+                        <label for="ingredient14">
+                            <span class="ingredient">
+                                Tomato
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient15" name="ingredient15" value="Celery">
+                        <label for="ingredient15">
+                            <span class="ingredient">
+                                Celery
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient16" name="ingredient16" value="Carrot">
+                        <label for="ingredient16">
+                            <span class="ingredient">
+                                Carrot
+                            </span>
+                        </label>
+                        <input type="checkbox" id="ingredient17" name="ingredient17" value="Lemon">
+                        <label for="ingredient17">
+                            <span class="ingredient">
+                                Lemon
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="product-header">
+                    <p class="details-header">These are the ingredients of this box:</p>
+                    <p class="ingridients">
+                        Kiwi,
+                        Avocado,
+                        Banana,
+                        Apple,
+                        Strawberry,
+                        Cucumber,
+                        Lettuce,
+                        White Potato,
+                        Red Potato,
+                        Yellow Onion,
+                        Red Onion,
+                        Spring Onion,
+                        Garlic,
+                        Tomato,
+                        Celery,
+                        Carrot,
+                        Lemon.
+                    </p>
+                    <p class="product-weight">≈ 5kg</p>
+                    <p class="product-name">Small</p>
+                </div>
+            </div>
+            <div class="product-details">
+                <div class="price-button">€ 7.50</div>
+                <div class="product-settings-button" data-toggle="collapse" data-target="#small-products">
+                    <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="add-button"><i class="fas fa-shopping-basket"></i>
+                </div>
+            </div>
         </div>
 
         <div id="Medium" class="tabcontent packages">
-            <a>
-                <div class="image-box">
-                    <img class="product-image" src="./assets/images/7.jpg" alt="Image of fruit box two" />
-                </div>
-                <div class="info-box">
-                    <div id="medium-products">
-                        <div class="product-header">
-                            <p class="details-header">These are the ingredients of this box:</p>
-                            <p class="ingridients">
-                                Kiwi,
-                                Avocado,
-                                Banana,
-                                Apple,
-                                Strawberry,
-                                Cucumber,
-                                Lettuce,
-                                White Potato,
-                                Red Potato,
-                                Yellow Onion,
-                                Red Onion,
-                                Spring Onion,
-                                Garlic,
-                                Tomato,
-                                Celery,
-                                Carrot,
-                                Lemon.
-                            </p>
-                            <p class="product-weight">≈ 12kg</p>
-                            <p class="product-name">Medium</p>
-                        </div>
+            <div class="image-box">
+                <img class="product-image" src="./assets/images/7.jpg" alt="Image of fruit box two" />
+            </div>
+            <div class="info-box">
+                <div id="medium-products">
+                    <div class="product-header">
+                        <p class="details-header">These are the ingredients of this box:</p>
+                        <p class="ingridients">
+                            Kiwi,
+                            Avocado,
+                            Banana,
+                            Apple,
+                            Strawberry,
+                            Cucumber,
+                            Lettuce,
+                            White Potato,
+                            Red Potato,
+                            Yellow Onion,
+                            Red Onion,
+                            Spring Onion,
+                            Garlic,
+                            Tomato,
+                            Celery,
+                            Carrot,
+                            Lemon.
+                        </p>
+                        <p class="product-weight">≈ 12kg</p>
+                        <p class="product-name">Medium</p>
                     </div>
                 </div>
-                <div class="product-details">
-                    <div class="price-button">€ 15</div>
-                    <div type="button" class="product-settings-button" data-toggle="collapse"
-                        data-target="#medium-products">
-                        <i class="fas fa-sliders-h"></i>
-                    </div>
-                    <div class="add-button"><i class="fas fa-shopping-basket"></i>
-                    </div>
+            </div>
+            <div class="product-details">
+                <div class="price-button">€ 15</div>
+                <div class="product-settings-button" data-toggle="collapse" data-target="#medium-products">
+                    <i class="fas fa-sliders-h"></i>
                 </div>
-            </a>
+                <div class="add-button"><i class="fas fa-shopping-basket"></i>
+                </div>
+            </div>
         </div>
 
         <div id="Large" class="tabcontent packages">
@@ -212,8 +312,7 @@
                 </div>
                 <div class="product-details">
                     <div class="price-button">€ 30</div>
-                    <div type="button" class="product-settings-button" data-toggle="collapse"
-                        data-target="#large-products">
+                    <div class="product-settings-button" data-toggle="collapse" data-target="#large-products">
                         <i class="fas fa-sliders-h"></i>
                     </div>
                     <div class="add-button"><i class="fas fa-shopping-basket"></i>
@@ -223,48 +322,45 @@
         </div>
 
         <div id="Customize" class="tabcontent packages">
-            <a>
-                <div class="image-box">
-                    <img class="product-image" src="./assets/images/6.jpg" alt="Image of fruit box two" />
-                </div>
-                <div class="info-box">
-                    <div id="customize-products">
-                        <div class="product-header">
-                            <p class="details-header">These are the ingredients of this box:</p>
-                            <p class="ingridients">
-                                Kiwi,
-                                Avocado,
-                                Banana,
-                                Apple,
-                                Strawberry,
-                                Cucumber,
-                                Lettuce,
-                                White Potato,
-                                Red Potato,
-                                Yellow Onion,
-                                Red Onion,
-                                Spring Onion,
-                                Garlic,
-                                Tomato,
-                                Celery,
-                                Carrot,
-                                Lemon.
-                            </p>
-                            <p class="product-weight">≈ Min 5kg</p>
-                            <p class="product-name">Customize</p>
-                        </div>
+            <div class="image-box">
+                <img class="product-image" src="./assets/images/6.jpg" alt="Image of fruit box two" />
+            </div>
+            <div class="info-box">
+                <div id="customize-products">
+                    <div class="product-header">
+                        <p class="details-header">These are the ingredients you can choose from:</p>
+                        <p class="ingridients">
+                            Kiwi,
+                            Avocado,
+                            Banana,
+                            Apple,
+                            Strawberry,
+                            Cucumber,
+                            Lettuce,
+                            White Potato,
+                            Red Potato,
+                            Yellow Onion,
+                            Red Onion,
+                            Spring Onion,
+                            Garlic,
+                            Tomato,
+                            Celery,
+                            Carrot,
+                            Lemon.
+                        </p>
+                        <p class="product-weight">≈ Min 5kg</p>
+                        <p class="product-name">Customize</p>
                     </div>
                 </div>
-                <div class="product-details">
-                    <div class="price-button">€ </div>
-                    <div type="button" class="product-settings-button" data-toggle="collapse"
-                        data-target="#customize-products">
-                        <i class="fas fa-sliders-h"></i>
-                    </div>
-                    <div class="add-button"><i class="fas fa-shopping-basket"></i>
-                    </div>
+            </div>
+            <div class="product-details">
+                <div class="price-button">€ </div>
+                <div class="product-settings-button" data-toggle="collapse" data-target="#customize-products">
+                    <i class="fas fa-sliders-h"></i>
                 </div>
-            </a>
+                <div class="add-button"><i class="fas fa-shopping-basket"></i>
+                </div>
+            </div>
         </div>
     </div>
 
