@@ -32,7 +32,7 @@
                         <p class="details-header">
                             Remove ingredients from your box:
                         </p>
-                        <!--  ingredients list -->
+                        <!--  ingredients checkboxes -->
                         <?php foreach ($included_products as $included): ?>
                             <input type="checkbox" id="<?php echo $included->id; ?>" name="<?php echo $included->id; ?>" value="<?php echo $included->name; ?>">
                             <label for="<?php echo $included->id; ?>">
@@ -41,17 +41,26 @@
                                 </span>
                             </label>
                         <?php endforeach; ?>
-                        <!--/  end ingredients list -->
+                        <!--/  end ingredients checkboxes -->
                     </div>
                 </div>
 
                 <div class="product-header">
                     <p class="details-header">These are the ingredients of this box:</p>
-                    <p class="ingredients">
-                        <?php foreach ($included_products as $included): ?>
-                        <?php echo $included->name . ', '; ?>
-                        <?php endforeach; ?>
+                    <!--  ingredients text list -->
+                    <p class="ingridients">
+                        <?php $numItems = count($included_products);
+                              $i = 0;
+                              foreach ($included_products as $included):
+                                  if(++$i === $numItems):
+                                      echo $included->name . '.'; // add full stop at end of array
+                                      else:
+                                      echo $included->name . ', '; // add comma otherwise
+                                  endif;
+                              endforeach; 
+                        ?>
                     </p>
+                    <!--/  end ingredients text list -->
                     <p class="product-weight">≈ <?php echo $product->product_weight; ?></p>
                     <p class="product-name"><?php echo $product->productname; ?></p>
                 </div>
