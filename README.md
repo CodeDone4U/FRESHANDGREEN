@@ -1,1 +1,1 @@
-Issues with tablinks. 
+Unchoosing ingredient to mute still in progress. 

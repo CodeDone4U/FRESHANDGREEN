@@ -28,11 +28,18 @@ function openProduct(productBox, elmnt, color) {
 })();
 
 
-function myFunction() {
-    var x = document.getElementById("ingredient");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+// this is called when someone tries to mute an ingredient
+
+function reply_click(mute_id) {
+    // we store the id in a variable
+    var mute = mute_id;
+    // slicing out the ending of the pressed ID
+    var str = mute.slice(7);
+    // storeing the id that is going to get class changed
+    // since they are the same ending it's going to know 
+    // which one we want to change.
+    var span_id = ("ingr_" + str);
+    var element = document.getElementById(span_id);
+    element.classList.add("muted");
 }
+

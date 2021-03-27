@@ -435,13 +435,40 @@ z-index: 2;
 .container span:hover {
     position: relative;
     display: inline-block;
+    background: dbdbb2;
+    box-shadow:0px 2px 13px #f79862;
+    color: gray;
+    padding: 7px 14px;
+    font-size: 17px;
+    transition: 0.6s;
+    margin-left: 3px;
+    -webkit-text-decoration: black 2px line-through;
+    text-decoration: black 2px line-through;
+}
+
+.ingredient {
+        position: relative;
+    display: inline-block;
     background: #dbdbb2;
-    box-shadow:0px 2px 10px #f79862;
     color: black;
     padding: 7px 14px;
     font-size: 17px;
     transition: 0.5s;
+    margin-left: 5px;
+    border: solid 2px #dbdbb2;
+}
+
+.muted {
+    position: relative;
+    display: inline-block;
+    background: #dbdbb2;
+    box-shadow:0px 2px 13px #f79862;
+    color: gray;
+    padding: 7px 14px;
+    font-size: 17px;
+    transition: 0.6s;
     margin-left: 3px;
+    -webkit-text-decoration: black 2px line-through;
     text-decoration: black 2px line-through;
 }
 
