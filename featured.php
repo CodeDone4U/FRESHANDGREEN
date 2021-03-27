@@ -6,7 +6,7 @@
 
     foreach ($featured_products as $product):
         $default_open = '';
-        if($product->productname == 'Healthy Box: Medium'):
+        if($product->productname == 'Medium'):
             $default_open = 'defaultOpen';
         endif;
     ?>
