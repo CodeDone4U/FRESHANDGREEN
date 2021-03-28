@@ -370,8 +370,7 @@ z-index: 2;
 .ingredients-text {
 font-size: 18px;
 float: right;
-padding-left: 10px;
-
+padding: 0px 10px;
 }
 
 .product-header {
@@ -396,8 +395,7 @@ padding-left: 10px;
   color: orange;
   font-size: 20px;
   font-weight: 100;
-  padding-top: 10px;
-  padding-left: 10px;
+  padding: 10px 10px 0px 10px;
   float: right;
 }
 
@@ -520,11 +518,11 @@ padding-left: 10px;
   font-size: 1.5vh;
  }
  .product-weight {
-  font-size: 15px;
-  padding: 0 0 0 10px;
+  font-size: 18px;
+  padding: 0px 10px;
  }
  .product-name {
-  font-size: 15px;
+  font-size: 18px;
  }
  .details-header {
   font-size: 12px;

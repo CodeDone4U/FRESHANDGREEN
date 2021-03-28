@@ -28,6 +28,10 @@ function openProduct(productBox, elmnt, color) {
 })();
 
 
+// for developement purposes
+document.getElementById("defaultOpen").click();
+
+
 // this is called when someone tries to mute an ingredient
 
 function reply_click(mute_id) {
