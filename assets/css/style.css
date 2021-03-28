@@ -12,6 +12,11 @@ a:hover {
   text-decoration: none;
 }
 
+.col-6 {
+margin: 0px;
+padding: 0px;
+}
+
 /*-------------------------------Navigation */
 
 nav {
@@ -257,24 +262,27 @@ z-index: 2;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 5px;
-  font-size: 15px;
-  height: 50px;
+  padding: 11px 8px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  height: 41px;
   width: 25%;
-  float: left;
 }
 
 /* Change background color of buttons on hover */
 .tablink:hover {
   background-color: #dbdbb2;
+  font-weight: 100;
+  outline: none;
 }
 
 /* Set default styles for tab content */
 .tabcontent {
   color: white;
   display: none;
-  padding: 0px;
-
+  justify-content: center;
+  padding-top: 10px;
 }
 
 .product-image-box {
@@ -286,8 +294,8 @@ z-index: 2;
   width: 60%;
   height: auto;
   float: left;
-  margin-right: 10px;
 }
+
 .packages img {
   height: auto;
   width: 100%;
@@ -295,28 +303,17 @@ z-index: 2;
   margin: 10px 0px;
   border: solid 10px #a6b784;
 }
-
 .packages {
-  width: 100%;
-  margin: 0px;
-  padding: 10px 0px;
+    width: 100%;
   vertical-align: center;
   justify-content: center;
   align-content: space-between;
   color: black;
 }
 
-.product-detail-section {
-  width: 30%;
-  height: 100%;
-  float: right;
-  top: 0;
-}
-
 .buttons-wrap {
     float: left;
 }
-
 
 .add-button {
   border: solid 2px black;
@@ -352,25 +349,37 @@ z-index: 2;
   margin-top: 10px;
 }
 
-.product-details {
+.product-settings-button:hover{
+  border: solid 2px #f79862;
+  width: 150px;
+  height: auto;
+  font-size: 25px;
+  text-align: center;
+  color: #f79862;
+  margin-top: 10px;
+}
+
+.button-section {
   vertical-align: center;
   justify-content: center;
   float: left;
-  padding: 10px 0;
+  padding: 10px 20px;
+  
 }
 
-.ingridients {
-  font-size: 18px;
+.ingredients-text {
+font-size: 18px;
+float: right;
+padding-left: 10px;
+
 }
 
 .product-header {
-  margin: 0px 5px;
-  color: gray;
-  font-size: 30px;
-  font-weight: 100;
-  float: right;
-  width: 37%;
-  padding-top: 10px;
+    color: gray;
+    font-size: 18px;
+    float: left;
+    padding-left: 10px;
+    width: 35%;
 }
 
 .product-boxes {
@@ -391,11 +400,20 @@ z-index: 2;
   padding-left: 10px;
   float: right;
 }
+
 .details-header {
   font-size: 20px;
   font-weight: 600;
   color: black;
+  padding-top: 15px;
+  padding-left: 5px;
 }
+
+.details-text {
+    font-size: 15px;
+    font-weight: 100;
+}
+
 .delete-header{
   font-size: 20px;
   font-weight: 600;
@@ -404,7 +422,6 @@ z-index: 2;
   float: right;
 }
 .container .change-product {
-   margin: 10px;
    flex-wrap: wrap;
 }
 
@@ -422,54 +439,55 @@ z-index: 2;
 
 .container span {
     position: relative;
+    text-align: center;
     display: inline-block;
     background: #dbdbb2;
+    padding: 4px 0px;
     color: black;
-    padding: 7px 14px;
-    font-size: 17px;
+    width: 100px;
+    height: 34px;
+    font-size: 15px;
     transition: 0.5s;
-    margin-left: 5px;
     border: solid 2px #dbdbb2;
 }
 
-.container span:hover {
-    position: relative;
-    display: inline-block;
-    background: dbdbb2;
-    box-shadow:0px 2px 13px #f79862;
-    color: gray;
-    padding: 7px 14px;
-    font-size: 17px;
-    transition: 0.6s;
-    margin-left: 3px;
-    -webkit-text-decoration: black 2px line-through;
-    text-decoration: black 2px line-through;
-}
-
 .ingredient {
-        position: relative;
+    position: relative;
+    text-align: center;
     display: inline-block;
     background: #dbdbb2;
     color: black;
-    padding: 7px 14px;
-    font-size: 17px;
+    font-size: 15px;
     transition: 0.5s;
-    margin-left: 5px;
     border: solid 2px #dbdbb2;
 }
 
 .muted {
     position: relative;
+    text-align: center;
     display: inline-block;
     background: #dbdbb2;
-    box-shadow:0px 2px 13px #f79862;
-    color: gray;
-    padding: 7px 14px;
-    font-size: 17px;
-    transition: 0.6s;
-    margin-left: 3px;
-    -webkit-text-decoration: black 2px line-through;
-    text-decoration: black 2px line-through;
+    box-shadow: 0px 2px 13px #f79862;
+    color: #f79862;
+    font-size: 15px;
+    transition: 1.2s;
+    margin-left: 1px;
+    text-decoration-line: line-through;
+    -webkit-text-decoration-line: line-through;
+}
+.message-box {
+  width: 300px;
+  padding: 10px;
+  margin: 0;
+  width: 150px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 100;
+  font-family: "Roboto";
+  text-align: left;
+  white-space: normal;
+  border: 1px solid grey;
+  border-radius: 0px;
 }
 
 /*------------------------------- Footer */
@@ -478,7 +496,7 @@ z-index: 2;
   background-color: rgba(105, 103, 103, 0.6);
   height: 250px;
   width: 100%;
-  margin-top: 700px;
+  margin-top: 50px;
   position: relative;
   text-align: center;
 }
@@ -491,13 +509,15 @@ z-index: 2;
   bottom: 0;
 }
 
+@media (min-width: 320px){
+ .product-header {
+  width: 100%;
+  float: left;
+ }
+}
 @media (max-width: 415px){
  .step-info {
   font-size: 1.5vh;
- }
-.ingridients {
-  font-size: 10px;
-  text-align: center;
  }
  .product-weight {
   font-size: 15px;
@@ -509,8 +529,9 @@ z-index: 2;
  .details-header {
   font-size: 12px;
   font-weight: 600;
-  text-align: center;
-  padding-top: 5px;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 5px;
 }
 .price-button {
   width: 100px;
@@ -527,19 +548,21 @@ z-index: 2;
 }
 .details-header {
   font-size: 15px;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 }
 @media (max-width: 768px){
-  .product-header {
-  width: 60%;
-}
 .image-box{
  margin-right: 0px;
+ width: 100%;
+}
+.change-product {
+    text-align: center;
+    justify-content: center;
 }
 }
-@media (min-width: 990px) {
-.product-details {
-  padding: 10px 20px;
+@media (min-width: 768px){
+ .product-header {
+  width: 35%;
  }
 }

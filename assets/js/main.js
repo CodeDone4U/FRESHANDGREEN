@@ -33,7 +33,7 @@ function openProduct(productBox, elmnt, color) {
 function reply_click(mute_id) {
     // we store the id in a variable
     var mute = mute_id;
-    // slicing out the ending of the pressed ID
+        // slicing out the ending of the pressed ID
     var str = mute.slice(7);
     // storeing the id that is going to get class changed
     // since they are the same ending it's going to know 
