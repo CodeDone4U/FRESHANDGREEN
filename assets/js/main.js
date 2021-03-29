@@ -53,4 +53,3 @@ function reply_click(mute_id) {
         $(element).addClass('muted')
     }
 }
-
